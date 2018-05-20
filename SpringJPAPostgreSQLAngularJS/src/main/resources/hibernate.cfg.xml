@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">root</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/MyBms</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+        <property name="hibernate.search.autoregister_listeners">false</property>
+        <property name="hibernate.validator.apply_to_ddl">false</property>
+        <mapping class="com.rank.ccms.entities.Extra" />
+        <mapping class="com.rank.ccms.entities.ExtraMst" />
+        <mapping class="com.rank.ccms.entities.BankParameter" />
+        <mapping class="com.rank.ccms.entities.Pax" />
+        <mapping class="com.rank.ccms.entities.BusinessSettings" />
+        <mapping class="com.rank.ccms.entities.City" />
+        <mapping class="com.rank.ccms.entities.Customer" />
+        <mapping class="com.rank.ccms.entities.Booking" />
+        <mapping class="com.rank.ccms.entities.JobFare" />
+        <mapping class="com.rank.ccms.entities.State" />
+        <mapping class="com.rank.ccms.entities.Car" />
+        <mapping class="com.rank.ccms.entities.User" />
+        <mapping class="com.rank.ccms.entities.BusinessPhone" />
+        <mapping class="com.rank.ccms.entities.Country" />
+        <mapping class="com.rank.ccms.entities.Address" />
+        <mapping class="com.rank.ccms.entities.BookingDriver" />
+        <mapping class="com.rank.ccms.entities.DriverMst" />
+        <mapping class="com.rank.ccms.entities.ExtraPrices" />
+        <mapping class="com.rank.ccms.entities.BankMst" />
+        <mapping class="com.rank.ccms.entities.EmailDetails" />
+        <mapping class="com.rank.ccms.entities.Jobs" />
+    </session-factory>
+</hibernate-configuration>
