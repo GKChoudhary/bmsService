@@ -1,5 +1,5 @@
 package com.rank.ccms.entities;
-// Generated 23 May, 2018 11:11:36 PM by Hibernate Tools 4.3.1.Final
+// Generated 24 May, 2018 12:57:27 AM by Hibernate Tools 4.3.1.Final
 
 import java.util.Date;
 import java.util.HashSet;
