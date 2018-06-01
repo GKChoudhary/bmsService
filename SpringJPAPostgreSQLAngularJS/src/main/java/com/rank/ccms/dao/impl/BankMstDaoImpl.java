@@ -27,4 +27,26 @@ public class BankMstDaoImpl implements BankMstDao {
 		return bankDetail;
 	}
 
+	@Override
+	public int create(BankMst bankMst) {
+		Session session = this.sessionFactory.getCurrentSession();
+		int id = (int) session.save(bankMst);
+		return id;
+	}
+
+	@Override
+	public void update(BankMst bankMst) {
+		// TODO Auto-generated method stub
+		Session session = this.sessionFactory.getCurrentSession();
+		session.update(bankMst);
+	}
+
+	@Override
+	public void delete(int id) {
+		Session session = this.sessionFactory.getCurrentSession();
+		BankMst bankMst = session.get(BankMst.class, id);
+		session.delete(bankMst);
+
+	}
+
 }

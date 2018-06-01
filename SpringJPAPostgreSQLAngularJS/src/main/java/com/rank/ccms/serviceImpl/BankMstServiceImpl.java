@@ -32,4 +32,22 @@ public class BankMstServiceImpl implements BankMstService {
 		return bankMstDao.getBankDetail();
 	}
 
+	@Override
+	public int create(BankMst bankMst) {
+		// TODO Auto-generated method stub
+		return bankMstDao.create(bankMst);
+	}
+
+	@Override
+	public void update(BankMst bankMst) {
+		// TODO Auto-generated method stub
+		bankMstDao.update(bankMst);
+	}
+
+	@Override
+	public void delete(int id) {
+		// TODO Auto-generated method stub
+		bankMstDao.delete(id);
+	}
+
 }
