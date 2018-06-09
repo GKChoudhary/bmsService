@@ -31,9 +31,11 @@ public class BankMstController {
 	// @RequestMapping(value = "/bank", method = RequestMethod.POST, produces =
 	// { "application/json" })
 	@PostMapping("/bank")
-	public int addBank(@RequestBody BankMst bankMst) {
+	public String addBank(@RequestBody BankMst bankMst) {
 
-		return bankMstService.create(bankMst);
+		int i = bankMstService.create(bankMst);
+
+		return "Save Successfull and Id is " + i;
 
 	}
 
